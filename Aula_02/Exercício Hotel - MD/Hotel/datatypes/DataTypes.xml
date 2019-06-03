@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<DataTypesDesign class="oracle.dbtools.crest.model.design.datatypes.DataTypesDesign" name="DataTypes" id="679AB6FA-7BAB-D682-A40E-6362F5A0365C" mainViewID="249C55D4-96B6-A2E6-4C8C-12A3C8DED95B">
+<createdBy>rm63675</createdBy>
+<createdTime>2012-04-24 11:37:46 UTC</createdTime>
+<ownerDesignName>Trabalho Hotel</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<defaultArrayLimit>10</defaultArrayLimit>
+<useRoleInAssociationEndAsName>true</useRoleInAssociationEndAsName>
+</DataTypesDesign>

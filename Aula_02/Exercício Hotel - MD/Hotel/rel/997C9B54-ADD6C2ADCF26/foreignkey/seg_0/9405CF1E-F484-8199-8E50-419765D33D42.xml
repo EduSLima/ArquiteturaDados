@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" id="9405CF1E-F484-8199-8E50-419765D33D42" directorySegmentName="seg_0" name="Relation_22">
+<createdBy>MARINA</createdBy>
+<createdTime>2012-07-07 15:39:55 UTC</createdTime>
+<generatorID>845BD205-380B-8F9E-5661-A648184F91C9</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<containerWithKeyObject>BB146EA9-AF86-C765-D683-653A47D91AF8</containerWithKeyObject>
+<deleteRule>RESTRICT</deleteRule>
+<localFKIndex>F239E7BF-3388-BB37-D43D-36EAD198873F</localFKIndex>
+<keyObject>BBED5FBC-1E1B-7641-A2EA-CF9A950F4B6C</keyObject>
+<mandatory>false</mandatory>
+<transferable>true</transferable>
+</FKIndexAssociation>
