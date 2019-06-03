@@ -1,0 +1,152 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1C6F79F2-8A88-59EC-DCD4-8097D998F881" schemaObject="040DF26C-8AD0-6909-3D77-069E361516FD" name="LOC_IMPOSTOS">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>CARLOCA</sourceObjSchema>
+<sourceObjName>LOC_IMPOSTOS</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CD_IMPOSTO" id="F162D0EE-8FFE-BA09-DE52-88AAAFEE6545">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>LOC_IMPOSTOS</sourceObjSchema>
+<sourceObjName>CD_IMPOSTO</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4 BYTE</dataTypeSize>
+<ownDataTypeParameters>4 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_INI_VIGENCIA" id="04377DF4-247B-3470-8A79-00EDB6A34C2F">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>LOC_IMPOSTOS</sourceObjSchema>
+<sourceObjName>DT_INI_VIGENCIA</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_FIN_VIGENCIA" id="C9D1EC69-55A4-3A6E-CA7A-2CB2DA9FA613">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>LOC_IMPOSTOS</sourceObjSchema>
+<sourceObjName>DT_FIN_VIGENCIA</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ALIQUOTA" id="ECEC061A-97F2-DEB7-2940-753BD4599446">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>LOC_IMPOSTOS</sourceObjSchema>
+<sourceObjName>ALIQUOTA</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CD_CIDADE" id="F7FDD72A-7085-2224-DBA7-682C20B574DA">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>LOC_IMPOSTOS</sourceObjSchema>
+<sourceObjName>CD_CIDADE</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="73111A72-D35C-49DE-35CF-3592BA2C2BD0" referredColumn="97B57E58-6D60-BEB4-16A7-7941851C167B"/>
+</associations>
+</Column>
+<Column name="CD_ESTADO" id="C61F0929-95B3-7771-3903-4A007410A34A">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>LOC_IMPOSTOS</sourceObjSchema>
+<sourceObjName>CD_ESTADO</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="73111A72-D35C-49DE-35CF-3592BA2C2BD0" referredColumn="88388739-6823-30DC-D684-507314C24A63"/>
+<colAssociation fkAssociation="8121459F-60D3-23FC-76A3-85085538BA21" referredColumn="2B68A929-79D9-FBEF-B1DF-9A129275A8B7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="73CDFBA3-268E-399D-4BF1-9FE3E65779F3" schemaObject="040DF26C-8AD0-6909-3D77-069E361516FD" name="PK_LOC_IMPOSTOS">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>CARLOCA</sourceObjSchema>
+<sourceObjName>PK_LOC_IMPOSTOS</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="F162D0EE-8FFE-BA09-DE52-88AAAFEE6545"/>
+<colUsage columnID="C61F0929-95B3-7771-3903-4A007410A34A"/>
+<colUsage columnID="F7FDD72A-7085-2224-DBA7-682C20B574DA"/>
+<colUsage columnID="04377DF4-247B-3470-8A79-00EDB6A34C2F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="48E02FD5-23DA-4049-C70B-9853E95A5CF6" name="FK_LOC_IMPCID">
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:48 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="F7FDD72A-7085-2224-DBA7-682C20B574DA"/>
+<colUsage columnID="C61F0929-95B3-7771-3903-4A007410A34A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="90B5D2DC-0037-9DF7-7540-A51362768A84" name="FK_LOC_IMPEST">
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:48 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="C61F0929-95B3-7771-3903-4A007410A34A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

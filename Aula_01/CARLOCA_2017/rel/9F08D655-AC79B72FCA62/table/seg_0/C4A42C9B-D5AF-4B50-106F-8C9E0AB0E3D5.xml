@@ -1,0 +1,126 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C4A42C9B-D5AF-4B50-106F-8C9E0AB0E3D5" schemaObject="040DF26C-8AD0-6909-3D77-069E361516FD" name="LOC_DDD_PREFIXO">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>CARLOCA</sourceObjSchema>
+<sourceObjName>LOC_DDD_PREFIXO</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CD_PREFIXO" id="67B7ACB0-6DFF-CA35-5365-DCA5828D1D53">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>LOC_DDD_PREFIXO</sourceObjSchema>
+<sourceObjName>CD_PREFIXO</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="73A72C83-0596-02C1-D93C-F7D6DEFE5A9B" referredColumn="EA320940-AF96-E28D-BB72-743B51CD0AAA"/>
+</associations>
+</Column>
+<Column name="CD_DDD" id="3B728359-D2FE-3FA8-0168-3F351C1E570C">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>LOC_DDD_PREFIXO</sourceObjSchema>
+<sourceObjName>CD_DDD</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D4342C52-8ABB-075A-CE9E-929EAEDE142B" referredColumn="EF185B17-9227-5802-73C5-95F4AF239328"/>
+</associations>
+</Column>
+<Column name="SEQ_DDD" id="22E820E3-F501-85D7-5C0A-2649728FB2F8">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>LOC_DDD_PREFIXO</sourceObjSchema>
+<sourceObjName>SEQ_DDD</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D4342C52-8ABB-075A-CE9E-929EAEDE142B" referredColumn="A67015A4-6D76-37DA-DBE1-A7A9129E89A8"/>
+</associations>
+</Column>
+<Column name="ESTADO_DDD" id="C7A61EC6-84E5-CB4F-33FE-B03689530A11">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>LOC_DDD_PREFIXO</sourceObjSchema>
+<sourceObjName>ESTADO_DDD</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D4342C52-8ABB-075A-CE9E-929EAEDE142B" referredColumn="61F75992-864A-A1C2-9473-E295CBEA633E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="06810A24-B212-D3AF-997C-E92D3CFDF8D0" schemaObject="040DF26C-8AD0-6909-3D77-069E361516FD" name="PK_LOC_DDD_PREFIXO">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>CARLOCA</sourceObjSchema>
+<sourceObjName>PK_LOC_DDD_PREFIXO</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="67B7ACB0-6DFF-CA35-5365-DCA5828D1D53"/>
+<colUsage columnID="3B728359-D2FE-3FA8-0168-3F351C1E570C"/>
+<colUsage columnID="22E820E3-F501-85D7-5C0A-2649728FB2F8"/>
+<colUsage columnID="C7A61EC6-84E5-CB4F-33FE-B03689530A11"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8D561465-BCF5-60C0-48D7-A9BFD12C329A" name="FK_LOC_PREDDD">
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:48 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="3B728359-D2FE-3FA8-0168-3F351C1E570C"/>
+<colUsage columnID="22E820E3-F501-85D7-5C0A-2649728FB2F8"/>
+<colUsage columnID="C7A61EC6-84E5-CB4F-33FE-B03689530A11"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="89DABDDF-BCFA-F20B-EC8E-ABB2E84E69F8" name="FK_LOC_PREPRE">
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:48 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="67B7ACB0-6DFF-CA35-5365-DCA5828D1D53"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

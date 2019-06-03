@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="EAA73290-3609-55C0-3F19-592C290FD584" containerWithKeyObject="6E0B2E39-B80A-6723-0337-631C2B1F562A" localFKIndex="620A3111-59ED-16EB-0244-5B826086528D" name="FK_LOC_NF_DUPLOC">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>CARLOCA</sourceObjSchema>
+<sourceObjName>FK_LOC_NF_DUPLOC</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:48 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>00EE5736-5CFB-A92E-8ED2-8AD70F561C4B</referredTableID>
+<keyObject>5EF1D1EA-344A-35E4-1BD2-8CA703B5AF41</keyObject>
+<referredKeyID>5EF1D1EA-344A-35E4-1BD2-8CA703B5AF41</referredKeyID>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>false</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

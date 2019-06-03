@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C212E252-0E32-6000-7710-1FD1CFA45DDA" schemaObject="040DF26C-8AD0-6909-3D77-069E361516FD" name="LOC_AGENCIA_BANCO">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>CARLOCA</sourceObjSchema>
+<sourceObjName>LOC_AGENCIA_BANCO</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CD_AGENCIA" id="F16F9D27-3412-F3ED-B0A2-29BC82FB428E">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>LOC_AGENCIA_BANCO</sourceObjSchema>
+<sourceObjName>CD_AGENCIA</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="END_AGENCIA" id="EEE35DE8-606B-C5A6-8C60-721F9D98248C">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>LOC_AGENCIA_BANCO</sourceObjSchema>
+<sourceObjName>END_AGENCIA</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CEP" id="2762C430-3057-0959-ADD6-795A496C1215">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>LOC_AGENCIA_BANCO</sourceObjSchema>
+<sourceObjName>CEP</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUMERO" id="B605DEB3-3557-C11E-1E00-D50FE0440FF4">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>LOC_AGENCIA_BANCO</sourceObjSchema>
+<sourceObjName>NUMERO</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="APELIDO" id="A452B35A-E810-97DB-4154-336270B2EF8D">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>LOC_AGENCIA_BANCO</sourceObjSchema>
+<sourceObjName>APELIDO</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CD_BANCO" id="974C18F6-5700-FBE4-C0A2-6AE90AF8D666">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>LOC_AGENCIA_BANCO</sourceObjSchema>
+<sourceObjName>CD_BANCO</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EFFA8346-73A7-33AB-1C2A-0CF213BEBBB2" referredColumn="FCD7C9B3-10BB-B9F0-439E-1B39831E7257"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="37034558-2E8E-CD5D-0868-AEB7B4E65EE4" schemaObject="040DF26C-8AD0-6909-3D77-069E361516FD" name="PK_LOC_AGENCIA_BANCO">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>CARLOCA</sourceObjSchema>
+<sourceObjName>PK_LOC_AGENCIA_BANCO</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="F16F9D27-3412-F3ED-B0A2-29BC82FB428E"/>
+<colUsage columnID="974C18F6-5700-FBE4-C0A2-6AE90AF8D666"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C6E4C1A8-6213-2CE3-DA60-02A63A822D25" name="FK_LOC_AGEBAN">
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:48 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="974C18F6-5700-FBE4-C0A2-6AE90AF8D666"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

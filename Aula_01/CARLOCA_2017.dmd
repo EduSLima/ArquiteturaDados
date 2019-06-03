@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="CARLOCA_2017" id="1F8642CF-AEC6-BCB4-1790-A0F5B57C45DC" version="3.5">
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:12:26 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Carloca2013</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>1F8642CF-AEC6-BCB4-1790-A0F5B57C45DC</designId>
+</OSDM_Design>
