@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" id="545FD63A-CE89-B75E-CBCA-F2221E2C8B10" directorySegmentName="seg_0" name="Hotel_Operadora">
+<createdBy>MARINA</createdBy>
+<createdTime>2012-07-07 14:57:19 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<engineerTo>
+<item key="997C9B54-A4D8-0145-183B-ADD6C2ADCF26" value="true"/>
+</engineerTo>
+<pkName>Operadora PK</pkName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<fonts>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Título</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Atributo</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Tipo de Dados</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Elemento da Chave Primária</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Elemento da Chave Estrangeira</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Elemento de Chave Exclusiva</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>NOT NULL</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Chave</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+<attributes>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="cdOperadora" id="7AE41C8E-2322-76D5-AD1D-36EA304863A1">
+<createdBy>MARINA</createdBy>
+<createdTime>2012-07-07 14:57:35 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<engineerTo>
+<item key="997C9B54-A4D8-0145-183B-ADD6C2ADCF26" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="nmOperadora" id="1A6BD5B8-9014-60A0-42AA-724A0D8E604D">
+<createdBy>MARINA</createdBy>
+<createdTime>2012-07-07 14:58:01 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<engineerTo>
+<item key="997C9B54-A4D8-0145-183B-ADD6C2ADCF26" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="cdTel" id="3199E06F-3F85-DC86-2E3B-C16235BD59D7">
+<createdBy>MARINA</createdBy>
+<createdTime>2012-07-07 15:01:47 UTC</createdTime>
+<generatorID>75C6A9C5-6679-BCB9-CE8D-6349FFD3A686</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<engineerTo>
+<item key="997C9B54-A4D8-0145-183B-ADD6C2ADCF26" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>A54F8141-A8A4-7DD9-9AAA-EDF6BB623D2F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+</Attribute>
+</attributes>
+<identifiers>
+<identifier class="oracle.dbtools.crest.model.design.logical.CandidateKey" id="EEE5A5CE-1954-83CA-7E8E-4FF16BE449A8" name="Operadora PK">
+<createdBy>MARINA</createdBy>
+<createdTime>2012-07-07 14:57:56 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<engineerTo>
+<item key="997C9B54-A4D8-0145-183B-ADD6C2ADCF26" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7AE41C8E-2322-76D5-AD1D-36EA304863A1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

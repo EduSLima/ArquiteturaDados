@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="LOC_CLASEE" directorySegmentName="seg_0" id="5AF45E21-1DE3-D5FB-3F39-6788434A25BE">
+<createdBy>AALABSP</createdBy>
+<createdTime>2017-12-07 16:14:53 UTC</createdTime>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="CD_CLASSE" id="5E41F806-F232-2E4B-AD85-7CA97B3CA2F2">
+<createdBy>AALABSP</createdBy>
+<createdTime>2017-12-07 16:15:38 UTC</createdTime>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NM_CLASSE" id="81110A46-5F3C-3C6A-29B2-98D67DC9FC65">
+<createdBy>AALABSP</createdBy>
+<createdTime>2017-12-07 16:16:19 UTC</createdTime>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="LOC_CLASEE_PK" id="66F4197D-00CA-189C-1EED-BC97E1A17B61">
+<createdBy>AALABSP</createdBy>
+<createdTime>2017-12-07 16:15:38 UTC</createdTime>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

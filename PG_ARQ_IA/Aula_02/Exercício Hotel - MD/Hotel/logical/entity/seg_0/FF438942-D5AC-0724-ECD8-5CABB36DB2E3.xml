@@ -1,0 +1,202 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" id="FF438942-D5AC-0724-ECD8-5CABB36DB2E3" directorySegmentName="seg_0" name="Hotel_Hospede">
+<createdBy>rm63675</createdBy>
+<createdTime>2012-04-24 11:37:55 UTC</createdTime>
+<ownerDesignName>Hotel</ownerDesignName>
+<engineerTo>
+<item key="997C9B54-A4D8-0145-183B-ADD6C2ADCF26" value="true"/>
+</engineerTo>
+<pkName>Hospede PK</pkName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<fonts>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Título</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Atributo</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Tipo de Dados</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Elemento da Chave Primária</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Elemento da Chave Estrangeira</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Elemento de Chave Exclusiva</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Chave</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Title</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Attribute</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Datatype</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>PK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>FK Element</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>UK Element</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Not Null</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Key</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+<attributes>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="cdHospede" id="5313BCB2-7AE6-DE04-4F2D-583CEA596A51">
+<createdBy>rm63675</createdBy>
+<createdTime>2012-04-24 11:38:14 UTC</createdTime>
+<ownerDesignName>Hotel</ownerDesignName>
+<engineerTo>
+<item key="997C9B54-A4D8-0145-183B-ADD6C2ADCF26" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="nmHosp" id="5490DE21-4C05-985B-7F3D-97E55042F248">
+<createdBy>rm63675</createdBy>
+<createdTime>2012-04-24 11:38:36 UTC</createdTime>
+<ownerDesignName>Hotel</ownerDesignName>
+<engineerTo>
+<item key="997C9B54-A4D8-0145-183B-ADD6C2ADCF26" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="cdProfissao" id="D442ECD5-0003-01F1-2301-747EE2D5D629">
+<createdBy>rm63675</createdBy>
+<createdTime>2012-04-24 11:38:52 UTC</createdTime>
+<ownerDesignName>Hotel</ownerDesignName>
+<engineerTo>
+<item key="997C9B54-A4D8-0145-183B-ADD6C2ADCF26" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="rgHosp" id="E1551E13-5E38-EEA9-C380-9CCDAEE43644">
+<createdBy>rm63675</createdBy>
+<createdTime>2012-04-24 11:40:28 UTC</createdTime>
+<ownerDesignName>Hotel</ownerDesignName>
+<engineerTo>
+<item key="997C9B54-A4D8-0145-183B-ADD6C2ADCF26" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="cpfHosp" id="32DC5398-0F03-A0B5-6A7F-81E7E805595F">
+<createdBy>rm63675</createdBy>
+<createdTime>2012-04-24 11:40:46 UTC</createdTime>
+<ownerDesignName>Hotel</ownerDesignName>
+<engineerTo>
+<item key="997C9B54-A4D8-0145-183B-ADD6C2ADCF26" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="natHosp" id="CA4B917E-5CF2-6750-0A3E-7C972D234667">
+<createdBy>rm63675</createdBy>
+<createdTime>2012-04-24 11:41:00 UTC</createdTime>
+<ownerDesignName>Hotel</ownerDesignName>
+<engineerTo>
+<item key="997C9B54-A4D8-0145-183B-ADD6C2ADCF26" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="cdHospede1" id="975A4B64-F3E9-23E4-F59D-4693F695A667">
+<createdBy>MARINA</createdBy>
+<createdTime>2012-07-11 20:47:43 UTC</createdTime>
+<generatorID>48E21A9A-43DE-8B51-698E-19E3DEB6BD54</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<engineerTo>
+<item key="997C9B54-A4D8-0145-183B-ADD6C2ADCF26" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>5313BCB2-7AE6-DE04-4F2D-583CEA596A51</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="cdProfissao1" id="7D1B80E3-AB8D-D5F6-62D8-B7CEB78B51BF">
+<createdBy>MARINA</createdBy>
+<createdTime>2012-07-11 20:47:49 UTC</createdTime>
+<generatorID>41A5CF1C-430F-70A2-7BD3-78BEDA7145FC</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<engineerTo>
+<item key="997C9B54-A4D8-0145-183B-ADD6C2ADCF26" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>F27CF2D4-3C25-4329-5724-7C5B2B73E956</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers>
+<identifier class="oracle.dbtools.crest.model.design.logical.CandidateKey" id="6A44E78C-E2C2-3202-BA75-E01588542465" name="Hospede PK">
+<createdBy>rm63675</createdBy>
+<createdTime>2012-04-24 11:38:32 UTC</createdTime>
+<ownerDesignName>Hotel</ownerDesignName>
+<engineerTo>
+<item key="997C9B54-A4D8-0145-183B-ADD6C2ADCF26" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5313BCB2-7AE6-DE04-4F2D-583CEA596A51</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

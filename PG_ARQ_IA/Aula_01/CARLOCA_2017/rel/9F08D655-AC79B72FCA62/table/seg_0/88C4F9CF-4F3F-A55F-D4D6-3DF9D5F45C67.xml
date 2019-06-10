@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="88C4F9CF-4F3F-A55F-D4D6-3DF9D5F45C67" schemaObject="040DF26C-8AD0-6909-3D77-069E361516FD" name="LOC_BANCO">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>CARLOCA</sourceObjSchema>
+<sourceObjName>LOC_BANCO</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CD_BANCO" id="FCD7C9B3-10BB-B9F0-439E-1B39831E7257">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>LOC_BANCO</sourceObjSchema>
+<sourceObjName>CD_BANCO</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_BANCO" id="4AFDC5F7-3144-0BB6-14A2-9EF02BA035B9">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>LOC_BANCO</sourceObjSchema>
+<sourceObjName>NM_BANCO</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80 BYTE</dataTypeSize>
+<ownDataTypeParameters>80 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="URL" id="68FEE993-0DFC-22DA-B916-AD7CDA8D4296">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>LOC_BANCO</sourceObjSchema>
+<sourceObjName>URL</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="55670C1E-D5E5-9132-44D9-DC5C67E02827" schemaObject="040DF26C-8AD0-6909-3D77-069E361516FD" name="PK_BANCO">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>CARLOCA</sourceObjSchema>
+<sourceObjName>PK_BANCO</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="FCD7C9B3-10BB-B9F0-439E-1B39831E7257"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

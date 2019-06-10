@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="LOC_DDD_PREFIXO" directorySegmentName="seg_0" id="C4A42C9B-D5AF-4B50-106F-8C9E0AB0E3D5">
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<schemaObject>040DF26C-8AD0-6909-3D77-069E361516FD</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>43F5D02E-1B62-6E53-95A5-9E8D22B9B66F</segment>
+<tableSpace>AA0EB949-B082-41FC-EA19-3DFDA7B4D142</tableSpace>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="SEQ_DDD" id="22E820E3-F501-85D7-5C0A-2649728FB2F8">
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CD_DDD" id="3B728359-D2FE-3FA8-0168-3F351C1E570C">
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CD_PREFIXO" id="67B7ACB0-6DFF-CA35-5365-DCA5828D1D53">
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ESTADO_DDD" id="C7A61EC6-84E5-CB4F-33FE-B03689530A11">
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_LOC_PREPRE" id="89DABDDF-BCFA-F20B-EC8E-ABB2E84E69F8">
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:48 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_LOC_PREDDD" id="8D561465-BCF5-60C0-48D7-A9BFD12C329A">
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:48 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_LOC_DDD_PREFIXO" id="06810A24-B212-D3AF-997C-E92D3CFDF8D0">
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:47 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<schemaObject>040DF26C-8AD0-6909-3D77-069E361516FD</schemaObject>
+<segment>97CEB879-3063-8BC3-D867-01810757726C</segment>
+<tableSpace>AA0EB949-B082-41FC-EA19-3DFDA7B4D142</tableSpace>
+<indexSegment>97CEB879-3063-8BC3-D867-01810757726C</indexSegment>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

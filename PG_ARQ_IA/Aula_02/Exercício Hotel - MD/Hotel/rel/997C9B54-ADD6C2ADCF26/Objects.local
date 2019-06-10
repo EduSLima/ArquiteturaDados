@@ -1,0 +1,30 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="Table" objectID="03F99722-223D-8B55-D6AE-E88A7AF0857A" name="Hotel_Operadora" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Table" objectID="1A506C96-D092-885E-8DD6-F2762EA925C2" name="Hotel_Comanda" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Table" objectID="4DEF1DEA-8D09-9CC3-8B3B-16FB078C3DDD" name="Hotel_Servico" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Table" objectID="65BD4FF6-12FC-F688-6F64-B2A3C0172E43" name="Hotel_Profissao" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Table" objectID="68CDC15A-8F76-75F5-54AF-EC0182DA57AA" name="Hotel_Apartamento" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Table" objectID="764B8118-EDBB-C286-701F-24B116634709" name="Hotel_Telefone" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Table" objectID="9DBE1E0C-2BD1-3354-8B66-F6EC0547F2CF" name="Hotel_tipo_telefone" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Table" objectID="BB146EA9-AF86-C765-D683-653A47D91AF8" name="Hotel_Hospedagem" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Table" objectID="CC3C40D1-86C9-787E-3A77-E20B471AD738" name="Hotel_Produto" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Table" objectID="D7AD061C-957A-5FBE-59C4-E0EBD3E2284D" name="Hotel_Email" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Table" objectID="EC80ED4D-0028-77D7-D8A1-8C61C0ABD75C" name="Hotel_Agencia" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Table" objectID="EF59B872-1048-B10D-BEB0-DFA167FA9442" name="Hotel_Hospede" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Table" objectID="F68B338D-A34C-25D5-F2FC-FED843570E2A" name="Hotel_TipoApartamento" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Table" objectID="FF210CD3-D9C7-72A6-7AD8-BB22F407B0A8" name="Hotel_Uso" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="FKIndexAssociation" objectID="09F412E8-EB8A-6190-25A9-77823B1B8A4F" name="Relation_5" containerID="" refContainerID="" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="FKIndexAssociation" objectID="2A57C8EC-59CA-7746-0E37-17436BF189EB" name="Relation_30" containerID="" refContainerID="" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="FKIndexAssociation" objectID="5E041878-5340-8423-BA2F-A84C64A80AFA" name="Relation_29" containerID="" refContainerID="" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="FKIndexAssociation" objectID="6A86923A-345D-889E-F0F5-159796663F6A" name="Relation_20" containerID="" refContainerID="" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="FKIndexAssociation" objectID="7787E773-B139-EC77-100E-A594BB44CC67" name="Relation_28" containerID="" refContainerID="" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="FKIndexAssociation" objectID="857DF0AD-826C-64EB-5E58-36070ECD469B" name="Relation_18" containerID="" refContainerID="" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="FKIndexAssociation" objectID="9405CF1E-F484-8199-8E50-419765D33D42" name="Relation_22" containerID="" refContainerID="" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="FKIndexAssociation" objectID="9E89BC3D-C97D-5B6B-9D61-413E0EB674B6" name="Relation_6" containerID="" refContainerID="" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="FKIndexAssociation" objectID="A924B119-366C-1308-BFE5-8D60DD4C9536" name="Relation_24" containerID="" refContainerID="" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="FKIndexAssociation" objectID="B0C22450-3DF3-BF5D-7D12-F6E94ED207A0" name="Relation_26" containerID="" refContainerID="" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="FKIndexAssociation" objectID="C5287295-2F6C-5F56-8DED-224565F5A993" name="Hotel_Hospede_Hotel_Profissao_FK" containerID="" refContainerID="" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="FKIndexAssociation" objectID="C60193C5-14CB-585F-B438-B74692690950" name="Relation_17" containerID="" refContainerID="" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="FKIndexAssociation" objectID="DEEE0D36-36AB-577A-0213-DC4DC0C878C4" name="Relation_32" containerID="" refContainerID="" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

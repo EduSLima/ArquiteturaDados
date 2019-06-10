@@ -1,0 +1,138 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="254667C9-B1BF-A6FA-8C7D-29F9F5B1D2A2" schemaObject="040DF26C-8AD0-6909-3D77-069E361516FD" name="LOC_AGENCIA">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>CARLOCA</sourceObjSchema>
+<sourceObjName>LOC_AGENCIA</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CD_CIDADE" id="1E44634A-E245-0D3F-6D79-308E2BC524C2">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>LOC_AGENCIA</sourceObjSchema>
+<sourceObjName>CD_CIDADE</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="97DDC9F5-5D12-C6CC-9984-99971BC35CF9" referredColumn="97B57E58-6D60-BEB4-16A7-7941851C167B"/>
+</associations>
+</Column>
+<Column name="CD_AGENCIA" id="32BEE4DE-83A7-DD9E-ADDC-DFA7220AF7C8">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>LOC_AGENCIA</sourceObjSchema>
+<sourceObjName>CD_AGENCIA</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_LOGRADOURO" id="892CB880-0168-E1A9-3D5A-7CC50EE2CFA0">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>LOC_AGENCIA</sourceObjSchema>
+<sourceObjName>NM_LOGRADOURO</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_BAIRRO" id="EC9D11E6-74B5-A311-63AD-DA9E8C631429">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>LOC_AGENCIA</sourceObjSchema>
+<sourceObjName>NM_BAIRRO</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUMERO" id="E3C1534E-3F2B-1F3F-90A8-8FB23AB71CA9">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>LOC_AGENCIA</sourceObjSchema>
+<sourceObjName>NUMERO</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CD_ESTADO" id="29AF2FB4-39FB-4E2A-0AB5-E050CD0CD636">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>LOC_AGENCIA</sourceObjSchema>
+<sourceObjName>CD_ESTADO</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="97DDC9F5-5D12-C6CC-9984-99971BC35CF9" referredColumn="88388739-6823-30DC-D684-507314C24A63"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4C285840-BE79-45A6-79FE-47FB4DD7DCFF" schemaObject="040DF26C-8AD0-6909-3D77-069E361516FD" name="PK_LOC_AGENCIA">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>CARLOCA</sourceObjSchema>
+<sourceObjName>PK_LOC_AGENCIA</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="1E44634A-E245-0D3F-6D79-308E2BC524C2"/>
+<colUsage columnID="32BEE4DE-83A7-DD9E-ADDC-DFA7220AF7C8"/>
+<colUsage columnID="29AF2FB4-39FB-4E2A-0AB5-E050CD0CD636"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6CBC7EB4-134F-495C-D997-FDD8C1CBE95F" name="FK_LOC_AGECID">
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:48 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="1E44634A-E245-0D3F-6D79-308E2BC524C2"/>
+<colUsage columnID="29AF2FB4-39FB-4E2A-0AB5-E050CD0CD636"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

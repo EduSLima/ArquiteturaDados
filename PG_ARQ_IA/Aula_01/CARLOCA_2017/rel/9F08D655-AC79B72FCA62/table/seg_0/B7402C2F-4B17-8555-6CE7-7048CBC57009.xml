@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B7402C2F-4B17-8555-6CE7-7048CBC57009" schemaObject="040DF26C-8AD0-6909-3D77-069E361516FD" name="LOC_COND_PARCELAS">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>CARLOCA</sourceObjSchema>
+<sourceObjName>LOC_COND_PARCELAS</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CD_CONDICAO" id="53D9F651-A12C-F6B6-7BA7-86C360123DA8">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>LOC_COND_PARCELAS</sourceObjSchema>
+<sourceObjName>CD_CONDICAO</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5B18CE37-437D-DC47-CA52-94BB91FB2F85" referredColumn="7B2BCEC5-0F58-17C4-EED1-1B618BA2F040"/>
+</associations>
+</Column>
+<Column name="CD_PARCELA" id="66C76019-71A3-A4E2-0109-38B688C8936E">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>LOC_COND_PARCELAS</sourceObjSchema>
+<sourceObjName>CD_PARCELA</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESC_COND_PARC" id="9B521F2F-8B68-A8E8-1AE7-3AD5BABE80A1">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>LOC_COND_PARCELAS</sourceObjSchema>
+<sourceObjName>DESC_COND_PARC</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QTD_DIAS" id="1BB15FC4-9C3E-C3A0-B23D-5C343AEE582F">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>LOC_COND_PARCELAS</sourceObjSchema>
+<sourceObjName>QTD_DIAS</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="15ED321B-D408-C222-8142-1D32F9878708" schemaObject="040DF26C-8AD0-6909-3D77-069E361516FD" name="PK_LOC_COND_PARCELAS">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>CARLOCA</sourceObjSchema>
+<sourceObjName>PK_LOC_COND_PARCELAS</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="53D9F651-A12C-F6B6-7BA7-86C360123DA8"/>
+<colUsage columnID="66C76019-71A3-A4E2-0109-38B688C8936E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0379C5E6-BE16-A87E-F641-20C0E8752938" name="FK_LOC_PARPAG">
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:48 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="53D9F651-A12C-F6B6-7BA7-86C360123DA8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

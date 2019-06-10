@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F41E90A8-94F2-062B-AAEA-ADFE9CC1E9EC" containerWithKeyObject="21265FC7-6226-4F31-2011-1B3302C591F4" localFKIndex="9558E2F3-2F93-3D43-AA77-E7A5ED91284A" name="FK_LOC_MOVCOB_MOVTRAN">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>CARLOCA</sourceObjSchema>
+<sourceObjName>FK_LOC_MOVCOB_MOVTRAN</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:48 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E2C64C2A-899E-1FDA-94D0-0AAF16A57094</referredTableID>
+<keyObject>69D6183A-84F6-1B58-9555-2EBB7EFE9A59</keyObject>
+<referredKeyID>69D6183A-84F6-1B58-9555-2EBB7EFE9A59</referredKeyID>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>false</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

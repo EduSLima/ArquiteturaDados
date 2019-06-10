@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8600170B-558D-636F-D7E7-4418CCD8465A" schemaObject="040DF26C-8AD0-6909-3D77-069E361516FD" name="LOC_CLI_JURIDICA">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>CARLOCA</sourceObjSchema>
+<sourceObjName>LOC_CLI_JURIDICA</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CD_CLIENTE" id="A89062CD-72CC-9777-AE99-8C31127D0F10">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>LOC_CLI_JURIDICA</sourceObjSchema>
+<sourceObjName>CD_CLIENTE</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BF1AE0A5-538C-0C8A-D047-EED7368CA70B" referredColumn="67AC9254-8A3F-D657-3C63-8A803339F37C"/>
+</associations>
+</Column>
+<Column name="NR_CNPJ" id="40B47A73-0D22-C104-9EDD-DD6CBC30D581">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>LOC_CLI_JURIDICA</sourceObjSchema>
+<sourceObjName>NR_CNPJ</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>14</dataTypePrecision>
+<ownDataTypeParameters>,14,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INS_ESTADUAL" id="E178F822-0AFD-168B-5ADB-8781CD21947B">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>LOC_CLI_JURIDICA</sourceObjSchema>
+<sourceObjName>INS_ESTADUAL</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>18</dataTypePrecision>
+<ownDataTypeParameters>,18,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_FUNDACAO" id="24F2D10D-56FB-4E8A-B6AF-023167CA15A9">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>LOC_CLI_JURIDICA</sourceObjSchema>
+<sourceObjName>DT_FUNDACAO</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INS_MUNICIPAL" id="11E75B6F-9384-686C-3619-0FC41F72419C">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>LOC_CLI_JURIDICA</sourceObjSchema>
+<sourceObjName>INS_MUNICIPAL</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<ownDataTypeParameters>,15,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_FANTASIA" id="1B1D5D0D-058D-8D35-DF3B-9BEBC8742F42">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>LOC_CLI_JURIDICA</sourceObjSchema>
+<sourceObjName>NM_FANTASIA</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7BE5D87B-6242-0668-8F00-ABF4BECA1C99" schemaObject="040DF26C-8AD0-6909-3D77-069E361516FD" name="PK_LOC_CLI_JURIDICA">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>CARLOCA</sourceObjSchema>
+<sourceObjName>PK_LOC_CLI_JURIDICA</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="A89062CD-72CC-9777-AE99-8C31127D0F10"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4C55B0E7-C33B-A27C-DDE8-128BE6702BB2" name="FK_LOC_JURCLI">
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:48 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="A89062CD-72CC-9777-AE99-8C31127D0F10"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

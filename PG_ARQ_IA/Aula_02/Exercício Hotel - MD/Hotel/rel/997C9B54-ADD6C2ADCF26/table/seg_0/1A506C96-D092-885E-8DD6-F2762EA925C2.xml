@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" id="1A506C96-D092-885E-8DD6-F2762EA925C2" directorySegmentName="seg_0" name="Hotel_Comanda">
+<createdBy>MARINA</createdBy>
+<createdTime>2012-07-07 15:39:54 UTC</createdTime>
+<generatorID>77D91E58-7078-27EE-0238-3D9968480B10</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<pkName>Consumo PK</pkName>
+<fonts>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Título</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Coluna</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Tipo de Dados</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Elemento da Chave Primária</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Elemento da Chave Estrangeira</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Elemento de Chave Exclusiva</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>NOT NULL</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>Chave</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+<columns>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="cdComanda" id="D85C6CAC-00FE-5301-92D6-306FE1B59CEA">
+<createdBy>MARINA</createdBy>
+<createdTime>2012-07-07 15:39:54 UTC</createdTime>
+<generatorID>8504046C-07FA-E51D-A44C-2719C7F6B24D</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="cdProduto" id="2774FF8B-9E71-1E21-6229-11876DAFCD4F">
+<createdBy>MARINA</createdBy>
+<createdTime>2012-07-07 15:39:54 UTC</createdTime>
+<generatorID>0BAC42F6-8B4F-E7ED-68B5-2A9EF1AF3B89</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="cdHospedagem" id="4B218AE7-9A96-2C63-2A93-AAF35BC7C220">
+<createdBy>MARINA</createdBy>
+<createdTime>2012-07-07 15:39:54 UTC</createdTime>
+<generatorID>C603E00A-E247-BC71-9AAE-67729AD7EB86</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="cdHospedagem1" id="2C12E952-CD00-D805-211E-4CCEB344A826">
+<createdBy>MARINA</createdBy>
+<createdTime>2012-07-07 15:39:54 UTC</createdTime>
+<generatorID>1B77210A-5405-D40D-7E56-72FDD4EAAADA</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<delegate>21A62749-922E-CAA4-975D-C898AFC35452</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7787E773-B139-EC77-100E-A594BB44CC67" referredColumn="21A62749-922E-CAA4-975D-C898AFC35452"/>
+</associations>
+</Column>
+</columns>
+<indexes>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="772BA492-C993-6171-866E-7640D5227BF4" name="Consumo PK">
+<createdBy>MARINA</createdBy>
+<createdTime>2012-07-07 15:39:54 UTC</createdTime>
+<generatorID>3F64C833-A3BB-5EE3-AB38-B46B4C7DCB49</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="D85C6CAC-00FE-5301-92D6-306FE1B59CEA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="D98537BD-12B9-E7ED-3318-43174AF2AB79" name="Relation_28">
+<createdBy>MARINA</createdBy>
+<createdTime>2012-07-07 15:39:55 UTC</createdTime>
+<generatorID>51B1F0A7-210F-34D9-88D4-8173E89692BC</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="2C12E952-CD00-D805-211E-4CCEB344A826"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

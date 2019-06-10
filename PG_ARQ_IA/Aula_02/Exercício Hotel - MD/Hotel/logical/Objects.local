@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.logical.LogicalDesign>
+   <object objectType="Entity" objectID="172CF6EF-B6C5-BD2D-9222-0A1EA81F4E8A" name="Hotel_Produto" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="1B393B3A-CE6E-7E1B-9B66-49C4471B7E4A" name="Hotel_Telefone" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="29A1AB03-D9DC-D67C-99FB-BEBD992AC59C" name="Hotel_Profissao" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="2FC0FD66-D5B4-E808-69D1-10A8D20CC559" name="Hotel_Hospedagem" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="545FD63A-CE89-B75E-CBCA-F2221E2C8B10" name="Hotel_Operadora" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="6B033CA1-E823-4B80-6C58-CDDF189B714D" name="Hotel_Uso" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="77D91E58-7078-27EE-0238-3D9968480B10" name="Hotel_Comanda" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="B3A82C2F-EAC1-AA7D-2C0E-D7C9C865ECE0" name="Hotel_Apartamento" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="DB186528-6DBE-BAD8-5419-3A38AA2DD121" name="Hotel_Agencia" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="DCE2C6A3-2356-558F-2B5F-2FA5ED3901FA" name="Hotel_tipo_telefone" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="F5E1FAA0-9C21-6256-F197-44CF0354E236" name="Hotel_Servico" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="F7A7F1AD-EB9D-E116-E04F-9C376F82C2E3" name="Hotel_TipoApartamento" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="FA30C2E2-4FAC-3D71-59A7-3096221E11B7" name="Hotel_Email" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="FF438942-D5AC-0724-ECD8-5CABB36DB2E3" name="Hotel_Hospede" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Relation" objectID="00737122-E839-7E9A-9AFD-A9DDD1E686E8" name="Relation_29" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Relation" objectID="1A1D7814-800A-6C84-4599-1EF42F398E7F" name="Relation_30" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Relation" objectID="41A5CF1C-430F-70A2-7BD3-78BEDA7145FC" name="Relation_16" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Relation" objectID="4486238E-EDC5-E72F-3613-11FC9CC6BC76" name="Relation_20" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Relation" objectID="48E21A9A-43DE-8B51-698E-19E3DEB6BD54" name="Relation_15" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Relation" objectID="51B1F0A7-210F-34D9-88D4-8173E89692BC" name="Relation_28" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Relation" objectID="60D9E3F3-F28E-DCED-2BBE-60C576EC517F" name="Relation_26" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Relation" objectID="617439BD-27C8-905E-7242-1C0B5F0CAD1C" name="Relation_18" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Relation" objectID="75C6A9C5-6679-BCB9-CE8D-6349FFD3A686" name="Relation_17" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Relation" objectID="845BD205-380B-8F9E-5661-A648184F91C9" name="Relation_22" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Relation" objectID="885972FD-3944-66B5-2AB9-57296F7F34A6" name="Relation_32" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Relation" objectID="932AECF2-8C43-BE54-16B8-308252644648" name="Relation_5" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Relation" objectID="BB1BB55D-F36D-C25F-394B-901703A9BE22" name="Relation_24" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Relation" objectID="DDA9659C-59DD-6905-F126-C42BF1DB050D" name="Relation_6" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+</oracle.dbtools.crest.model.design.logical.LogicalDesign>

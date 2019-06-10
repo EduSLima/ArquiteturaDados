@@ -1,0 +1,243 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A19533CA-61FC-DA1C-108D-B93A2BD16DCE" schemaObject="040DF26C-8AD0-6909-3D77-069E361516FD" name="LOC_ITEM_LOCACAO">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>CARLOCA</sourceObjSchema>
+<sourceObjName>LOC_ITEM_LOCACAO</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DT_RETIRADA" id="2CC42FE0-BE68-F8F8-A6C1-AECC27FBEA12">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>LOC_ITEM_LOCACAO</sourceObjSchema>
+<sourceObjName>DT_RETIRADA</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_ITEM" id="157FD646-B758-CD14-9E3D-BDDD0DE27018">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>LOC_ITEM_LOCACAO</sourceObjSchema>
+<sourceObjName>NR_ITEM</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_ENTREGA" id="7BD30603-A404-F934-D47A-16BA89434748">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>LOC_ITEM_LOCACAO</sourceObjSchema>
+<sourceObjName>DT_ENTREGA</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QT_DIAS" id="0DD8DFE6-F269-BBEE-5684-E25D223E2124">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>LOC_ITEM_LOCACAO</sourceObjSchema>
+<sourceObjName>QT_DIAS</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VL_LOCACAO" id="6CAF3709-E20F-6CF1-2328-F62AA88DBD93">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>LOC_ITEM_LOCACAO</sourceObjSchema>
+<sourceObjName>VL_LOCACAO</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,11,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_PLACA" id="D3DB9D4E-91F5-7276-E3FA-1716546AB353">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>LOC_ITEM_LOCACAO</sourceObjSchema>
+<sourceObjName>NR_PLACA</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>7 BYTE</dataTypeSize>
+<ownDataTypeParameters>7 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="90A37E51-25CD-A906-E03C-C4DCE7E01436" referredColumn="DC857BA6-6D1C-4738-0B66-99F0ADDD0DE5"/>
+</associations>
+</Column>
+<Column name="VL_TOTAL" id="A111A0B3-431F-BF35-1C77-057B7B617AD0">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>LOC_ITEM_LOCACAO</sourceObjSchema>
+<sourceObjName>VL_TOTAL</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,11,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_PEDIDO" id="0C0DBBAA-51D2-1A54-078D-5D6B9D6BCED9">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>LOC_ITEM_LOCACAO</sourceObjSchema>
+<sourceObjName>NR_PEDIDO</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="668F46EE-F030-905E-78B0-32B715499AD0" referredColumn="66E6D6D3-3EC3-F7AE-F473-55AEC2FA47B0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AB544EA0-A22F-7FAD-3D22-60403279E7EA" schemaObject="040DF26C-8AD0-6909-3D77-069E361516FD" name="PK_LOC_ITEM_LOCACAO">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>CARLOCA</sourceObjSchema>
+<sourceObjName>PK_LOC_ITEM_LOCACAO</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="0C0DBBAA-51D2-1A54-078D-5D6B9D6BCED9"/>
+<colUsage columnID="157FD646-B758-CD14-9E3D-BDDD0DE27018"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A5646830-35D9-28B1-65E7-F130FF205C8C" schemaObject="040DF26C-8AD0-6909-3D77-069E361516FD" name="IDX_ILOC1">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>CARLOCA</sourceObjSchema>
+<sourceObjName>IDX_ILOC1</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<indexColumnUsage>
+<colUsage columnID="2CC42FE0-BE68-F8F8-A6C1-AECC27FBEA12"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0E40D4AF-D897-89ED-CD81-A2E5EEFEEFC6" schemaObject="040DF26C-8AD0-6909-3D77-069E361516FD" name="IDX_ILOC2">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>CARLOCA</sourceObjSchema>
+<sourceObjName>IDX_ILOC2</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<indexColumnUsage>
+<colUsage columnID="7BD30603-A404-F934-D47A-16BA89434748"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7A2F1192-111F-31F7-8C75-864706C39ED9" schemaObject="040DF26C-8AD0-6909-3D77-069E361516FD" name="IDX_ILOC3">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>CARLOCA</sourceObjSchema>
+<sourceObjName>IDX_ILOC3</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<indexColumnUsage>
+<colUsage columnID="0DD8DFE6-F269-BBEE-5684-E25D223E2124"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="037CEDD1-9808-A152-5339-5FF602289B6C" schemaObject="040DF26C-8AD0-6909-3D77-069E361516FD" name="IDX_ILOC4">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>CARLOCA</sourceObjSchema>
+<sourceObjName>IDX_ILOC4</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<indexColumnUsage>
+<colUsage columnID="6CAF3709-E20F-6CF1-2328-F62AA88DBD93"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0A0373DF-B969-0EBE-DC8D-AFC41FD33293" schemaObject="040DF26C-8AD0-6909-3D77-069E361516FD" name="IDX_ILOC5">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>CARLOCA</sourceObjSchema>
+<sourceObjName>IDX_ILOC5</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<indexColumnUsage>
+<colUsage columnID="A111A0B3-431F-BF35-1C77-057B7B617AD0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EDACAC9D-8670-3D87-C2E4-11577D1B74CB" name="FK_LOC_ITELOC_VEI">
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:48 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="D3DB9D4E-91F5-7276-E3FA-1716546AB353"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9D35B5D9-0670-E457-1F28-9065AECE5364" name="FK_LOC_ITLOC_PEDLOC">
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:48 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="0C0DBBAA-51D2-1A54-078D-5D6B9D6BCED9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

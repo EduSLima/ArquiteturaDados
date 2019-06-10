@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="1EB30EBA-150F-D4CC-C174-DB8E9BCE30CF" containerWithKeyObject="79D59A0F-5556-37D5-6C4F-18B53ED5953C" localFKIndex="31DF59FC-5293-37D2-EADB-742CF2B657E1" name="FK_LOC_FISCLI">
+<sourceConnName>LOCAL</sourceConnName>
+<sourceObjSchema>CARLOCA</sourceObjSchema>
+<sourceObjName>FK_LOC_FISCLI</sourceObjName>
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:48 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>26C04FDF-9CF2-AD3E-147E-635EB9AF9F73</referredTableID>
+<keyObject>4FDA11F2-79C4-D315-5687-2F07C1922B46</keyObject>
+<referredKeyID>4FDA11F2-79C4-D315-5687-2F07C1922B46</referredKeyID>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>false</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

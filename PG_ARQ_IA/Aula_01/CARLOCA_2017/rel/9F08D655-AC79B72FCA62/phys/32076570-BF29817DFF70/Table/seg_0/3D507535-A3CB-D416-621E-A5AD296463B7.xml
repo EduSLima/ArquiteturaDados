@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="LOC_ENDERECO_PROPRIETARIO" directorySegmentName="seg_0" id="3D507535-A3CB-D416-621E-A5AD296463B7">
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<schemaObject>040DF26C-8AD0-6909-3D77-069E361516FD</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>43F5D02E-1B62-6E53-95A5-9E8D22B9B66F</segment>
+<tableSpace>AA0EB949-B082-41FC-EA19-3DFDA7B4D142</tableSpace>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="CEP" id="0A304068-421D-F6AA-2E0C-E1345D92FABC">
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CD_ENDERECO_PROP" id="0F6EAF3B-19A6-4E11-A21B-5EA85EDF0E77">
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CD_CIDADE" id="3B2E6C7F-9389-CD0A-E61A-62BEC070BA0A">
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COMPLEMENTO" id="6078E59A-2C3F-110A-D006-52937F2958B4">
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="BAIRRO" id="989027BE-CBC5-EAA5-C451-EF0344AC0145">
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CD_ESTADO" id="9A6A4B8E-33A0-8CE8-BD84-A3ED4AFAC03E">
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CD_PROPRIETARIO" id="9F0E7BB4-CAFE-6819-A333-5309DD887328">
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TP_ENDERECO" id="D9A80BCB-8B31-E247-158F-2D37698790AB">
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LOGRADOURO" id="DC079314-D071-4747-71C1-925329449E62">
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_LOC_END_PROP" id="A6E16AE0-4BA8-6893-EB10-E96F80191BA0">
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:48 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_LOC_END_PROCID" id="BEEF8892-E5EE-50FB-B082-C55D580084D1">
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:48 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_LOC_ENDERECO_PROPRIETARIO" id="A92E3A71-0F7B-9FF2-C80C-CCE1F3FB4420">
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:47 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<schemaObject>040DF26C-8AD0-6909-3D77-069E361516FD</schemaObject>
+<segment>97CEB879-3063-8BC3-D867-01810757726C</segment>
+<tableSpace>AA0EB949-B082-41FC-EA19-3DFDA7B4D142</tableSpace>
+<indexSegment>97CEB879-3063-8BC3-D867-01810757726C</indexSegment>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

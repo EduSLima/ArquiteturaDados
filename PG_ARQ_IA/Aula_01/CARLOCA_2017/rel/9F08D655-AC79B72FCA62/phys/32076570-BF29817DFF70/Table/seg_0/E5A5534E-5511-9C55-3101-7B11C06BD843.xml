@@ -1,0 +1,45 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="LOC_CFO" directorySegmentName="seg_0" id="E5A5534E-5511-9C55-3101-7B11C06BD843">
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<schemaObject>040DF26C-8AD0-6909-3D77-069E361516FD</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>43F5D02E-1B62-6E53-95A5-9E8D22B9B66F</segment>
+<tableSpace>AA0EB949-B082-41FC-EA19-3DFDA7B4D142</tableSpace>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="APLICACAO" id="B84CFFC3-C0CC-A092-CE97-239C2D3EC878">
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CFOP" id="DABF1FDB-CA25-A1BD-59BB-0F53CEDEDB46">
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DESC_CFO" id="EDA969AE-7975-9E0B-FF33-D5A17817C9E7">
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:46 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_LOC_CFO" id="B10A661B-AEE3-0C52-3566-4BC65FD5FC34">
+<createdBy>Leonardo</createdBy>
+<createdTime>2013-01-15 16:20:47 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>CARLOCA_2017</ownerDesignName>
+<schemaObject>040DF26C-8AD0-6909-3D77-069E361516FD</schemaObject>
+<segment>97CEB879-3063-8BC3-D867-01810757726C</segment>
+<tableSpace>AA0EB949-B082-41FC-EA19-3DFDA7B4D142</tableSpace>
+<indexSegment>97CEB879-3063-8BC3-D867-01810757726C</indexSegment>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

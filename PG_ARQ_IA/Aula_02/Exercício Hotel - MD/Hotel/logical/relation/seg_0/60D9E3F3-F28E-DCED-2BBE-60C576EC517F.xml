@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_26" id="60D9E3F3-F28E-DCED-2BBE-60C576EC517F" directorySegmentName="seg_0">
+<createdBy>MARINA</createdBy>
+<createdTime>2012-07-07 15:16:42 UTC</createdTime>
+<generatorID>Gerado pelo usuário</generatorID>
+<ownerDesignName>Hotel</ownerDesignName>
+<engineerTo>
+<item key="997C9B54-A4D8-0145-183B-ADD6C2ADCF26" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>B3A82C2F-EAC1-AA7D-2C0E-D7C9C865ECE0</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>F7A7F1AD-EB9D-E116-E04F-9C376F82C2E3</targetEntity>
+<transferable>true</transferable>
+</Relation>
