@@ -1,0 +1,2 @@
+http://cassandra.apache.org/doc
+https://docs.datastax.com/en/cql/3.3/cql/cql_reference/cqlSelect.html

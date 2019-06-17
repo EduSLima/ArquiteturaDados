@@ -1,0 +1,159 @@
+-- Criando um banco de dados
+use dbMongo
+db
+-- Criando uma coleção
+db.colecao1.count()
+-- Inserindo países
+db.colecao1.insert({nome: "Brasil"})
+db.colecao1.insert( {nome: "França"} )
+-- Consultando a base
+db.colecao1.find()
+db.colecao1.insert( {nome: 'Inglaterra'} )
+db.colecao1.insert( {nome: 'Uruguai'} )
+db.colecao1.insert( {nome: 'Holanda'} )
+db.colecao1.insert( {nome: 'Argentina'} )
+db.colecao1.insert( {nome: 'Chile'} )
+-- Consultando a base
+db.colecao1.find()
+db.colecao1.find( {}, {"nome": ""} )
+db.colecao1.find( {nome:'Brasil'} )
+db.colecao1.findOne()
+
+-- Inserindo (e pesquisando) selecao 70
+db.colecao1.insert( {nome:'Felix',posicao: 'goleiro', numero: '1'} )
+db.colecao1.find( {nome: "Felix"} )
+db.colecao1.find( {nome: "Felix"}, {numero:""} )
+db.colecao1.find( {nome: "Felix"}, {numero:"",posicao:""} )
+
+db.colecao1.insert (
+                      {nome:'Carlos Alberto',
+                       posicao: 'Lateral Direito', 
+                       numero: '4',
+                       time: 'Santos',
+                       idade: 25,
+                       tipo: 'Defensor' } )
+
+
+db.colecao1.insert (
+                      {nome:'Brito',
+                       posicao: 'Zqgueiro Central', 
+                       numero: '2',
+                       time: 'Flamengo',
+                       idade: 30,
+                       tipo: 'Defensor' } )
+
+db.colecao1.insert (  {nome:'Piazza',
+                       posicao: 'Quarto Zqgueiro', 
+                       numero: '3',
+                       time: 'Cruzeiro',
+                       idade: 26,
+                       tipo: 'Defensor' }
+                       )
+
+db.colecao1.insert (
+                      {nome:'Everaldo',
+                       posicao: 'Lateral Direito', 
+                       numero: '16',
+                       time: 'Grêmio',
+                       idade: 26,
+                       tipo: 'Defensor' } )
+
+
+
+-- Limpeza e Formatação
+cls
+db.colecao1.find().pretty()
+db.colecao1.find( {nome: "Piazza"} )
+db.colecao1.find( {nome: "Piazza"}, {"idade":""} )
+
+
+-- Updadte e Exclusão
+db.colecao1.update( {nome: 'Everaldo'},{posicao: "Lateral Esquerdo"} )
+-- Notar que foram perdidos demais dados!
+db.colecao1.remove( {posicao: "Lateral Esquerdo"} )
+-- Inserindo Everaldo novamente, na posição errada;
+db.colecao1.insert (
+                      {nome:'Everaldo',
+                       posicao: 'Lateral Direito', 
+                       numero: '16',
+                       time: 'Grêmio',
+                       idade: 26,
+                       tipo: 'Defensor' } )
+db.colecao1.update( {nome: 'Everaldo'},
+                    {nome:'Everaldo',
+                       posicao: 'Lateral Esquerdo', 
+                       numero: '16',
+                       time: 'Grêmio',
+                       idade: 26,
+                       tipo: 'Defensor' } )
+db.colecao1.find()
+-- Corrigindo os dados do Felix
+db.colecao1.update( {nome: 'Felix'},
+                    {nome:'Felix',
+                       posicao: 'Goleiro', 
+                       numero: '1',
+                       time: 'Fluminense',
+                       idade: 32,
+                       tipo: 'Goleiro' } )
+                       
+db.colecao1.insert (
+                      {nome:'Clodoaldo',
+                       posicao: 'Meia Direita', 
+                       numero: '5',
+                       time: 'Santos',
+                       idade: 20,
+                       tipo: 'Meia' } )
+
+-- Notar que só foi alterada a posição do Clodoaldo, mas demais dados mantidos
+db.colecao1.update( {nome: 'Clodoaldo'},
+                     {$set:{posicao: 'Meia Direita/Volante'}}
+                   )
+                   
+db.colecao1.insert (  {nome:'Piazza',
+                       posicao: 'Quarto Zqgueiro', 
+                       numero: '3',
+                       time: 'Cruzeiro',
+                       idade: 26,
+                       tipo: 'Defensor' }
+                       )                   
+
+
+db.colecao1.update( {nome: 'Brasil'},
+                     {$set:{grupo: '3'}} )
+db.colecao1.update( {nome: 'Inglaterra'},
+                     {$set:{grupo: '3'}} ) 
+db.colecao1.update( {nome: 'Uruguai'},
+                     {$set:{grupo: '2'}} )
+db.colecao1.remove( {nome: 'França'} )
+db.colecao1.insert({nome: "Brasil", 
+                    grupo: "0"})
+
+db.colecao1.find( {nome: "Brasil"} )
+
+db.colecao1.update( {nome: 'Brasil'},
+                     {$set:{grupo: '3'}} )
+
+db.colecao1.find( {nome: "Brasil"} )
+-- Só um foi alterado....
+
+db.colecao1.update( {nome: 'Brasil'},
+                     {$set:{grupo: '3'}}, {multi:true} )
+
+db.colecao1.find( {nome: "Brasil"} )
+-- Agora ambos alterados
+
+db.colecao1.update( {nome: 'Itália'},
+                     {$set:{grupo: '2'}}, {multi:true,upsert:1} )
+
+-- Os especialistas em Banco
+db.cadastro.save({ "nome" : "Raphael", "grupo" : [ "Oracle", "ExaData", "Big Data"], } )
+db.cadastro.save({ "nome" : "Gabriel", "grupo" : [ "MongoDB", "Sybase", "SAP Hana"], } )
+db.cadastro.save({ "nome" : "Alexandra", "grupo" : [ "Neo4j", "Ingres", "db2"], } )
+db.cadastro.save({ "nome" : "Daniel", "grupo" : [ "redis", "CouchDB", "Hive"], } )
+db.cadastro.save({ "nome" : "Pedro", "grupo" : [ "Cassandra", "Vertica", "HBase"], } )
+
+-- Para pequenas populações
+for(i=0; i<10; i++) { db.colecao1.save({AlgumValor: i}); }
+
+-- Para conectar direto
+mongod --install -serviceName "Mongo DB" --aerviceDisplayName "Mongo DB" --logpath c:\data\log

@@ -1,0 +1,427 @@
+-- para executar via browse
+http://localhost:7474/browser/
+
+-- Na solução desktop
+-- Crie um novo Projeto (Teste, por exemplo)
+-- Start o Banco
+-- Entre em Manage, para trabalhar no banco
+-- Abra o Browser
+
+-- Sintaxe de Criação e Pesquisa
+-- CREATE (n {nome}))
+-- MATCH (n {nome}) return n
+
+-- Para testar comandos
+CREATE (u1:Usuario {Nome: 'Usuário 0', Cd: 1 })
+MATCH (u1:Usuario {Nome: 'Usuário 0', Cd: 1 }) return u1
+CREATE (u2:Usuario {Nome: 'usuario 2', Cd: 2 })
+MATCH (u2:Usuario {Nome: 'usuario 2', Cd: 2 }) return u2
+
+-- Observar que o usuário 1 está acentuado e que o Id é outro! Note que maiúscula e minúscula importam!
+CREATE (u3:Usuario {Nome: 'Usuario 3', Cd: 3 })
+MATCH (u3:Usuario {Nome: 'Usuario 3', Cd: 3 }) return u3
+
+match(u1) where id(u1) >= 0 return u1
+match(u1) where id(u1) >= 0 return u1.Nome
+match(u1) where id(u1) >= 0 return u1.Nome
+
+-- Retorna Todos
+match(u1) where id(u1) = 1 return u1
+-- Sem retorno
+match(u1) where id(u1) = 0 return u1
+-- Retorna apenas o primeiro
+match (n) where id(n) >= 0 return id(n)
+-- Retorna os ids
+
+CREATE (m1:ModuloSistema {Nome: 'Compras'})
+match(u1) where u1.Nome='Usuário 1' return u1
+-- Retorna o Uusário 1
+match(u1) where u1.Nome='Usuario 1' return u1
+-- Não retorna nada
+match(u2) where u2.Nome='Usuario 2' return u2
+-- Retorma o Usuário 2
+match(m1) where id(m1) >= 0 return m1
+-- Retorna tudo
+
+-- Localiza e deleta pelo Cd
+CREATE (u3:Usuario {Nome: 'Usuario 4', Cd: 4 })
+match (u1:Usuario {Cd: 4 }) return u1
+match (u1:Usuario {Cd: 4 }) delete u1
+
+-- Alterando Propriedades
+match (n) where id(n) >= 0 return id(n)
+-- Usar Válidos!
+match (n) where id(n) = 47 set n:Excluir return n
+match (n:Excluir) set n.Nome = 'Ernesto' return n.Nome
+match (n) where id(n) = 48 set n.Nome = 'Estela' return n.Nome
+
+
+-- Abra outro banco ou apague tudo!
+MATCH (n) DETACH DELETE n 
+
+-- Ou se quiser algum somente
+MATCH (n { name: '<nome:' }) DETACH DELETE n 
+MATCH (n { name: '<nome>' })-[r:<relacao>]->() DELETE r 
+
+
+-- Vamos montar agora uma pequena estrutura
+CREATE (u1:Usuario {Nome: 'Usuario 1'})
+CREATE (m1:ModuloSistema {Nome: 'Vendas'})
+CREATE (s1:Supervisor {Nome: 'Supervisor 1'})
+CREATE (m1:ModuloSistema {Nome: 'Financeiro'})
+
+
+-- Pesquisas
+match(n) where id(n) >= 0 return n
+match (n) where n:Usuario return n
+match (n) where n:Usuario or n:Supervisor return n
+match(u1) where u1.Nome='Usuario 1' return u1
+match(u1),(s1) where u1.Nome='Usuario 1' and  s1.Nome='Vendas' return *
+
+-- excluindo tudo (apenas para saber!
+match(n) delete n
+
+-- Mudando Propriedades
+match(n) where id(n) = 1 set n:Mobile return n
+match (n) where id(n) In [1, 2] set n:Usuario_Negocio return n
+match (n) where id(n) In [1, 2] set n:Usuario_Operacional return n
+match (n) set n:KEC return n
+
+
+-- Criando Relacoes
+match(u1),(s1) where u1.Nome='Usuario 1' and  s1.Nome='Vendas' 
+create (u1)-[r:ESCRITA]->(s1)
+return *
+
+CREATE (u1:Usuario {Nome: 'Usuario 2', Cd: 21 })
+match(u),(s) where u.Nome='Usuario 2' and  s.Nome='Vendas' 
+create (u)-[r:LEITURA]->(s)
+return *
+
+match(u),(s) where u.Nome='Usuario 1' and  s.Nome='Vendas' 
+create (u)-[r:ADMINISTRACAO]->(s)
+return *
+
+match(u),(s) where u.Nome='Supervisor_1' and  s.Nome='Financeiro' 
+create (u)-[r:ADMINISTRACAO]->(s)
+return *
+
+match(u1),(s1) where u1.Nome='Usuario_1' and  s1.Nome='Vendas' 
+create (u1)-[r:LEITURA]->(s1)
+return *
+
+match(u1),(s1) where u1.Nome='Usuario_2' and  s1.Nome='Financeiro' 
+create (u1)-[r:LEITURA]->(s1)
+return *
+
+match(u),(s) where u.Nome='Usuario_2' and  s.Nome='Financeiro' 
+create (u)-[r:ESCRITA]->(s)
+return *
+
+-- Criando atributos
+match(u1) where u1.Nome='Usuario_1'  
+set u1.pontos = 4
+return *
+
+match(u1) where u1.Nome='Usuario_2'  
+set u1.pontos = 3
+return *
+
+match(m) where m.Nome='Vendas'  
+set m.orcamento = 300000
+return *
+
+match(m) where m.Nome='Financeiro'  
+set m.orcamento = 200000
+return *
+
+-- Note que não temos um Supervisor!
+match(s) where s.Nome='Supervisor'  
+set s.pontos = 5
+return s
+
+match(s) where s.Nome='Supervisor_1'  
+set s.pontos = 5
+return s
+
+
+-- Pesquisas
+match (x) 
+where x.pontos = 3
+return x
+
+match (x) 
+where x.pontos >= 3
+return x
+
+match (s:ModuloSistema) 
+where s.orcamento >= 200000
+return s
+
+match (u:Usuario) 
+where u.pontos <> 1
+return u
+
+match (s:ModuloSistema), (u:Usuario) 
+where s.orcamento >= 200000 and u.pontos > 1
+return s, u
+
+match (s:ModuloSistema), (u:Usuario) 
+where s.orcamento >= 200000 or u.pontos = 1
+return s, u
+
+-- Obtendo Usuários e Sistemas
+match (s:ModuloSistema), (u:Usuario) 
+where s.orcamento >= 200000 or u.pontos = 5
+return s, u
+
+match (s:ModuloSistema), (su:Supervisor) 
+where s.orcamento >= 200000 or su.pontos = 5
+return s, su
+
+
+
+-- Base Cinema
+-- Buscando tudo
+match (n) return n
+match(n) where id(n) >= 0 return n
+match (ator)-[:ACTED_IN]-(filme) return ator, filme
+MATCH (ator:Person)-[:ACTED_IN]->(filme:Movie) RETURN ator, filme
+MATCH (ator:Person)-[:ACTED_IN]->(filme:Movie) RETURN ator.name, filme.title
+MATCH (pessoa:Person)-[relatedTo]-(filme:Movie) RETURN pessoa.name, Type(relatedTo), relatedTo
+
+-- Alguns nós
+match (n) where id(n) in [10,20,21,0] return n
+match(n) where id(n) >= 0 and id(n) <= 14 return n
+match (movie:Movie) where id(movie) <= 14 return movie
+match (movie:Movie) where id(movie) <= 14 return movie.title
+match(n) where n.name='Keanu Reeves' return n
+match (n:Person) where id(n) <= 14 return n
+
+-- Achando o Tom Hanks
+MATCH (pessoa:Person {name: "Tom Hanks"}) RETURN pessoa
+match(n) where n.name='Tom Hanks' return n
+
+-- Achando o filme Top Gun
+MATCH (p:Person)-[:ACTED_IN]->(m:Movie {title: 'Top Gun'})
+RETURN p.name
+
+-- Quem atuou em Top Gun?
+MATCH (p:Person)-[:ACTED_IN]->(m:Movie)
+WHERE m.title = 'Top Gun'
+RETURN p.name
+
+-- Quem são os Tom?
+MATCH (p:Person)
+WHERE p.name STARTS WITH 'Tom'
+RETURN p
+
+-- E os Kevin?
+MATCH (p:Person)-[:ACTED_IN]->(m:Movie)
+WHERE p.name STARTS WITH 'Kevin'
+RETURN p, m
+
+-- E quem trabalhou com o Tom Hanks?
+MATCH (p:Person)-[:ACTED_IN]->(m:Movie)
+WHERE p.name = 'Tom Hanks'
+RETURN m.title AS title
+
+-- Quantos filmes temos cadastrados por ator?
+MATCH (p:Person)-[:ACTED_IN]->(m:Movie)
+RETURN p.name, count(*) AS movies
+
+-- Quantos filmes cada ator atuou, em ordem decrescente e que sejam Top 5?
+MATCH (p:Person)-[:ACTED_IN]->(m:Movie)
+RETURN p.name, count(*) AS movies
+ORDER BY movies DESC
+LIMIT 5
+
+-- Quantos filmes o ator atuou, mas Top 5.
+MATCH (p:Person)-[:ACTED_IN]->(m:Movie)
+RETURN m.title, count(*) AS actors
+ORDER BY actors DESC
+LIMIT 5
+
+-- Quem contracenou com a Meg Ryan?
+MATCH (p:Person)-[:ACTED_IN]->(m:Movie),
+      (other:Person)-[:ACTED_IN]->(m)
+WHERE p.name = 'Meg Ryan'
+RETURN other.name
+
+
+-- Quem e em que outros filmes atuou, tendo alguma vez contracenado com a Meg Ryan?
+MATCH (p:Person)-[:ACTED_IN]->(m:Movie),
+      (other:Person)-[:ACTED_IN]->(m)
+WHERE p.name = 'Meg Ryan'
+RETURN other.name, m.title
+ORDER BY other.name
+
+
+-- Quais atores contracenaram com a Meg Ryan, mas omita duplicidades.
+MATCH (p:Person)-[:ACTED_IN]->(m:Movie),
+      (other:Person)-[:ACTED_IN]->(m)
+WHERE p.name = 'Meg Ryan'
+RETURN DISTINCT other.name
+
+-- Quais filmes e diretores trabalharam Tom Hanks e Meg Ryan?
+MATCH (p:Person)-[:ACTED_IN]->(m:Movie),
+      (other:Person)-[:ACTED_IN]->(m),
+      (director:Person)-[:DIRECTED]->(m)
+WHERE p.name = 'Meg Ryan' and other.name ='Tom Hanks'
+RETURN m.title AS movie,
+       director.name AS director,
+       other.name AS coActor,
+       p.name AS atriz
+
+
+-- Que atores trabalharam em filmes de quem já dirigiu a Meg Ryan?
+MATCH (p:Person)-[:ACTED_IN]->(m:Movie),
+      (other:Person)-[:ACTED_IN]->(m),
+      (director:Person)-[:DIRECTED]->(m)
+WHERE p.name = 'Meg Ryan'
+RETURN m, director, other
+
+
+-- Quem são as pessoas que escreveram filmes que também produziram?
+MATCH (p:Person)-[:WROTE]->(m:Movie)
+WHERE (p)-[:PRODUCED]->(m)
+RETURN p.name, m.title
+
+-- Quem são as pessoas que escreveram filmes que não os produziram?
+MATCH (p:Person)-[:WROTE]->(m:Movie)
+WHERE NOT (p)-[:PRODUCED]->(m)
+RETURN p.name, m.title
+
+-- Qyue filmes Danny DeVito atuou ou dirigiu?
+MATCH (p:Person)-[r:ACTED_IN|:DIRECTED]->(m:Movie)
+WHERE p.name = 'Danny DeVito'
+RETURN p.name, type(r), m.title
+
+-- Quem nunca atuou ou dirigiu filmes, mas fez outras coisas?
+MATCH (p:Person)
+WHERE NOT (p)-[:ACTED_IN|:DIRECTED]->(:Movie)
+RETURN p
+
+-- Quem dirigiu filmes e se chama Tom?
+MATCH (p:Person)-[:DIRECTED]->(m:Movie)
+WHERE p.name STARTS WITH 'Tom'
+RETURN p.name, m.title
+
+-- Quem se chama Tom? E se dirigiu algum filme, qual foi?
+MATCH (p:Person)
+WHERE p.name STARTS WITH 'Tom'
+OPTIONAL MATCH (p)-[:DIRECTED]->(m:Movie)
+RETURN p.name, m.title
+
+-- Atores dos filmes The Matrix, na forma de vetor
+MATCH (p:Person)-[:ACTED_IN]->(m:Movie)
+WHERE m.title STARTS WITH 'The Matrix'
+RETURN m.title, collect(p.name) AS actors
+
+-- Filmes, como vetor, para atores com mais de 5 filmes.
+MATCH (p:Person)-[:ACTED_IN]->(m:Movie)
+WITH p, collect(m.title) AS movies
+WHERE size(movies) > 5
+RETURN p.name, movies
+
+-- Filmes, como vetor, para atores com mais de 5 filmes em ordem alfabética
+MATCH (p:Person)-[:ACTED_IN]->(m:Movie)
+WITH p, m
+ORDER BY m.title
+WITH p, collect(m.title) AS movies
+WHERE size(movies) > 5
+RETURN p.name, movies
+
+
+-- Atores mais velhos com ao menos dois filmes
+MATCH (actor:Person)
+WITH actor
+ORDER BY actor.born
+LIMIT 2
+return actor
+
+-- Ator, filme e sua idade atual
+MATCH (actor)-[:ACTED_IN]->(movie:Movie)
+WITH actor, movie
+ORDER BY movie.released DESC
+RETURN actor.name,
+    2018 - actor.born AS age,
+    COLLECT(movie.title)[..3] AS movies
+
+-- Produtores de filmes, Top 5
+MATCH (p:Person)
+RETURN p.name,
+       SIZE((p)-[:PRODUCED]->(:Movie)) AS prod
+ORDER BY prod DESC
+LIMIT 5
+
+-- Produtores com mais de 5 filmes
+MATCH (p:Person)
+WHERE size((p)-[:PRODUCED]->(:Movie)) > 5
+RETURN p.name
+
+-- Top 5 atores, mas se dirigiram, qual filme dirigiram
+mATCH (p:Person)
+WITH p, size((p)-[:ACTED_IN]->(:Movie)) AS movies
+ORDER BY movies DESC
+LIMIT 5
+OPTIONAL MATCH (p)-[:DIRECTED]->(m:Movie)
+RETURN p.name, m.title
+
+-- Montar um vetpr
+WITH [1, 2, 3] AS list
+RETURN list
+
+-- Montar uma lista
+WITH [1, 2, 3] AS list
+UNWIND list AS row
+RETURN row
+
+-- Quem dirigiu o que?
+MATCH (dir:Person)-[:DIRECTED]->(m)
+RETURN p.name, m.title, dir.name
+
+-- Quem contracenou com Kevin Bacon ou Tom Cruise até 4 graus de distância
+MATCH p = (p1:Person)-[:ACTED_IN*..4]-(p2:Person)
+WHERE p1.name = 'Tom Cruise' AND
+      p2.name = 'Kevin Bacon'
+RETURN p
+
+-- Quem contracenou com Kevin Bacon ou Tom Cruise até 6 graus de distância
+MATCH p = (p1:Person)-[:ACTED_IN*4..6]-(p2:Person)
+WHERE p1.name = 'Tom Cruise' AND
+      p2.name = 'Kevin Bacon'
+RETURN p
+
+-- Qual caminho mais curto em Trom Cruise e Kevin Bacon
+MATCH p = (p1:Person)-[:ACTED_IN*4..6]-(p2:Person)
+WHERE p1.name = 'Tom Cruise' AND
+      p2.name = 'Kevin Bacon'
+RETURN [x IN nodes(p) |
+  CASE WHEN x:Person THEN x.name
+       WHEN x:Movie  THEN x.title
+  ELSE '' END
+] AS path
+
+
+-- Caminho mais curto entre Tom Cruise e Kevin Bacon
+MATCH p = shortestPath((p1:Person)-[*]-(p2:Person))
+WHERE p1.name = 'Tom Cruise' AND
+      p2.name = 'Kevin Bacon'
+RETURN p
+
+-- Caminho mais curto entre Top Gun e The Matrix
+MATCH p = shortestPath((m1:Movie)-[*]-(m2:Movie))
+WHERE m1.title = 'Top Gun' AND
+      m2.title = 'The Matrix'
+RETURN p
+
+-- Top 3 de atores que atuaram com atores que aturam com Keanu Reeves, mas que nunca contracenaram com ele
+MATCH (p:Person)-[:ACTED_IN]->()<-[:ACTED_IN]-(c),
+(c)-[:ACTED_IN]->()<-[:ACTED_IN]-(coc)
+WHERE p.name = 'Keanu Reeves'
+	AND coc <> p
+ 	AND NOT (p)-[:ACTED_IN]->()<-[:ACTED_IN]-(coc)
+RETURN coc.name as colleagueOfColleague, count(coc) as weight
+ORDER BY weight DESC
+LIMIT 3

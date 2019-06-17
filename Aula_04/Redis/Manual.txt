@@ -1,0 +1,8 @@
+Comandos
+https://redis.io/commands
+http://www.aubrymaciel.com.br/ti/redis-64-bits-manual-de-instalacao-e-configuracao-no-windows
+
+Install
+https://www.youtube.com/watch?v=DYaFW5MhfG8
+https://www.youtube.com/watch?v=0PDTMV8uUGs
+

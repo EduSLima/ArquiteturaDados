@@ -1,0 +1,161 @@
+-- Servidor 
+-- redis-server
+-- Cliente
+-- redis-cli
+
+-- Na web
+try.redis.io
+
+-- Comandos
+https://redis.io/commands/georadius
+
+-- Apagar todos os dados
+flushall
+
+-- Apagar o banco de dados corrente
+flushdb
+
+-- Testando Comunicação
+PING
+echo "Alo Mundo!"
+
+
+-- Escolhendo um banco para trabalhar (só vale no redis, na web não há esse conceito)
+select 1
+
+
+-- String (atomico)
+set volei_fem Meninas_do_Volei
+get volei_fem
+mset volei_fem_92 Barcelona volei_fem_96 Atlanta
+keys *
+get volei_fem_92
+
+
+-- Alterando e acrescendo
+set volei_fem Meninas_do_Volei_Brasil
+get volei_fem
+setrange volei_fem 17 Especial
+set futebol_Brasil Time_70
+append futebol_Brasil ' apenas craques'
+
+
+-- Excluindo
+set gremio campeao
+get gremio
+del gremio
+get gremio
+
+
+-- Brincando com o tempo
+set inter 'Manga Claudio Figueroa Marinho_Perez Vacaria Cacapava Carpegiani Falcao Valdomiro Claudomiro Dario Lula'
+get inter
+expire inter 120
+ttl inter
+set gremio campeao ex 30
+ttl gremio
+get gremio
+
+
+-- pilhas
+lpush cor Branco Laranja Roxo Azul Amarelo Vermelho Verde Preto 
+lrange cor 0 -1
+
+lpush volei_fem_prata Ana_Moser Ida Ana_Flavia Ana_Paula Fernanda_Venturini Ana_Lucia Ana_Maria_Volpone Fofao Leila
+lrange volei_fem_prata 0 -1
+lrange volei_fem_prata 0 -4
+lrange volei_fem_prata 3 -1
+lrange volei_fem_prata 3 -3
+
+rpush volei_fem_prata Hilma
+lpush volei_fem_prata Marcia_Fu
+
+-- 2 vezes 2 entradas
+rpush volei_fem_prata Marcia_Fu
+rpush volei_fem_prata Ida
+
+-- Sacando a Ana Moser
+rpop volei_fem_prata
+lrange volei_fem_prata 0 -1
+-- Sacando a Ida e a Leila
+rpop volei_fem_prata
+lpop volei_fem_prata
+-- Podando a lista
+ltrim volei_fem_prata 0 2
+
+-- listas
+sadd time_70 Felix Carlos_Alberto Brito Piazza Everaldo Clodoaldo Gerson Rivellino Jairzinho Tostao Pele
+smembers time_70
+sadd time_74 Leao Ze_Maria Luis_Pereira Marinho_Perez Marinho_Chagas Piazza Carpegiani Rivellino Paulo_Cesar Valdomiro Jairzinho Dirceu
+smembers time_74
+-- Cuidado com underline!
+
+sadd time_70a Felix Carlos_Alberto Brito Piazza Everaldo Clodoaldo Gerson Rivellino Jairzinho Tostao Pele Rivellino
+sadd time_70 Brito
+sadd time_70 Paulo_Cesar
+
+sinter time_70 time_74
+sinterstore times_70_74 time_70 time_74
+smembers times_70_74
+sunion time_70 time_74
+sdiff time_70 time_74
+
+sismember time_70 Pele
+sismember time_70 Rivellino
+sismember time_74 Pele
+sismember time_74 Rivellino
+
+-- Sorted List
+zadd formula_1 3 Senna
+zrange formula_1 0 -1
+zadd formula_1 2 Fittipaldi
+zadd formula_1 1 Hill
+zadd formula_1 3 Piquet
+zadd formula_1 7 Schumacher
+zadd formula_1 4 Prost
+zadd formula_1 2 Hakkinen
+
+zrevrange formula_1 0 -1
+zrangebyscore formula_1 2 3
+zrangebyscore formula_1 2 3 withscores
+zrank formula_1 Piquet
+
+
+-- Hashed
+hmset volei_fem_ouro Fofao levantadora Fabi libero Mari oposta Sheilla ponta Paula_Pequeno ponta Thaisa cerntral
+
+hmget volei_fem_ouro Mari
+
+hmset oop personalidade 'Alan Kay' nascimento 1940 invento smalltalk conceito "Programacao Orientada a Objetos"
+hgetall oop
+hget oop nascimento
+hget oop invento
+hmget oop personalidade conceito
+hmset risc personalidade 'Sophie Wilson' nascimento 1957 educacao BASIC video codec games EIDOS 
+hmset programacao personalidade 'Grace Hopper' nascimento 1906 invento compilador linguagem flow-matic inspirou COBOL curiosidade bug
+hmgetall risc
+hmset risc instrucao risc
+hmset ti 'Richard Stallman' 1953 'Anita Borg' 1949 'Yukihiro Matsumoto' 1965 'Hedy Lamarr' 1914 
+hmset ti 'Linus Tovalds' 1969 'Alan Turing' 1912 'Ada Augusta King' 1815 'Jean Jennings Bartik' 1924
+
+hgetall programacao
+hmget programacao personalidade curiosidade invento
+
+
+-- Geo
+geoadd Bra -22.54 -43.12 "Rio_de_Janeiro"
+geoadd Bra -23.32 -46.38 "Sao_Paulo"
+geoadd Bra -30.01 -51.13 "Porto_Alegre"
+geoadd Bra -25.25 -49.16 "Curitiba"
+geoadd Bra -27.35 -48.32 "Florianopolis"
+geoadd Bra -26.18 -48.50 "Joinville"
+geoadd Bra -23.05 -48.55 "Avare"
+geoadd Bra -23.32 -54.35 "Foz_do_Iguacu" -29.45 -57.05 "Uruguaiana"
+geohash Bra Sao_Paulo Rio_de_Janeiro Porto_Alegre Curitiba
+geodist Bra Sao_Paulo Porto_Alegre km
+geodist Bra Uruguaiana Porto_Alegre km
+geopos Bra Foz_do_Iguacu Rio_de_Janeiro Piracicaba
+georadius Bra -25 -49 700 km 
+georadius Bra -25 -49 200 km 
+georadius Bra -25 -49 700 km withdist
+georadius Bra -25 -49 700 km withdist withcoord

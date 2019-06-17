@@ -1,0 +1,12 @@
+cd\program files\mongodb\server\3.6\bin
+md\db
+md\db\db1
+md\db\db2
+md\db\db3
+md\db\db4
+md\db\db9
+md\db\arb
+md\db\db0
+
+-- Para alterar a variável de ambiente
+set path=%path%;"c:\Program Files\MongoDB\Server\3.6\bin"

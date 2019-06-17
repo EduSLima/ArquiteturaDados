@@ -1,0 +1,69 @@
+cd\program files\mongodb\server\3.6\bin
+md\db
+md\db\db1
+md\db\db2
+md\db\db3
+md\db\db4
+md\db\db9
+md\db\arb
+md\db\db0
+
+-- Servidores MongoDB
+mongod --dbpath c:\db\db1 --replSet "rs0" --port 27027
+mongod --dbpath c:\db\db2 --replSet "rs0" --port 27028
+mongod --dbpath c:\db\db3 --replSet "rs0" --port 27029
+mongod --dbpath c:\db\db4 --replSet "rs0" --port 27030
+mongod --dbpath c:\db\db9 --replSet "rs0" --port 27099
+mongod --dbpath c:\db\arb --replSet "rs0" --port 27100
+mongod --dbpath c:\db\db0 --replSet "rs0" --port 27020
+
+-- Concectar ao MongoDB
+mongo --port 27027
+
+-- Configurar os servidores
+Config={_id:"rs0",members:[{_id:1,host:"localhost:27027"},{_id:2,host:"localhost:27028"},{_id:3,host:"localhost:27029"},{_id:4,host:"localhost:27030"},{_id:9,host:"localhost:27099"}]}
+
+
+
+ReConf={_id:"rs0",members:[{_id:1,host:"localhost:27027"},{_id:2,host:"localhost:27028"},{_id:3,host:"localhost:27029"},{_id:4,host:"localhost:27030"},{_id:9,host:"localhost:27099",priority:"0",slaveDelay:"60",hidden:"true"}]}
+
+
+rs.initiate(Config)
+
+-- Insira alguns valores do Script (no dbMongo)
+-- Depois veja o Status e Consulte Valores
+rs.status()
+
+-- Confira que tudo está OK e os 5 nós estão ativos.
+-- Agora outro prompt no secundário (no dbMongo)
+mongo --port 27029
+
+-- Acesse sem configurar e veja que não há acesso
+-- Rode o escravo e veja que acessa
+rs.slaveOk()
+
+-- Pesquise......
+Insira pelo primário uma série de registros
+for(i=0; i<10; i++) { db.colecao1.save({AlgumValor: i}); }
+     WriteResult({ "nInserted" : 1 })
+
+-- Defina um árbitro     
+rs.addArb("localhost:27100")
+
+-- derrube a conexão principal e veja o status
+Veja o Status e note que tudo está funcionando
+
+-- Tendo um backup ou cópia atrasada
+cfg=rs.conf()
+cfg.members[0].priority = 0
+cfg.members[0].hidden = 0
+cfg.members[0].slaveDelay = 60
+rs.reconfig(cfg)
+
+-- Valide pelo status qual é o MongoDB "atrasado", supondo 27030
+-- Conecte algum secundário, devem ter caído na reconfiguração
+mongo --port 27030
+rs.slaveOk()
+
+Vá para o banco (por exemplo o dbMongo) e teste
+for(i=0; i<10; i++) { db.colecao1.save({Novos: i+10}); }
